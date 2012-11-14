@@ -1,0 +1,26 @@
+create a main.rb file and make a .run file in it
+and 
+enter a movie
+then a enter a movie
+and you query the internet from jason
+and you're gonna put out the actors
+
+movies table -- many to many ==directors table
+genres table -- many to many --movies table
+
+movies: title, year, rated, runtime
+directors: name
+genre: name
+
+ask for the movie, the data comes out, and you insert the movie into the data base and you pull the directors out and insert them into the directors table 
+
+how do you take the string and turn thm into an array 
+director.split
+genre.split
+
+make a loop of movie or quit]
+
+save gthem and attach them to that movie 
+validate for duplicates of genre's 
+genre.where(:name => name) and attach it to the record
+as you're pulling the data see if the data exists already using the where and then just attach it
