@@ -1,0 +1,10 @@
+<!-- <div class="box"> -->
+	<% @stocks.each do |stock| %>
+
+		<% quote = YahooFinance::get_quotes( YahooFinance::StandardQuote, stock ) %>
+		<ul>
+			<li><%= stock %></li>
+			<li><%= quote %></li>
+		</ul>
+	<% end %>
+<!-- </div>	 -->
