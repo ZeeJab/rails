@@ -1,0 +1,24 @@
+/*
+ *= require 'reset'
+ *= require_self
+ */
+
+ .field label {
+ 	display: block;
+ }
+ /*if the label is inside the field turn it into a block*/
+
+ .field {
+ 	margin-bottom: 10px;
+ }
+
+ body{
+ 	padding: 25px;
+ 	background: gray;
+ 	color: #cccccc;
+ }
+
+ .error {
+ 	color: red;
+
+ }

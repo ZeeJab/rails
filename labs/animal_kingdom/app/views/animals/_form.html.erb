@@ -1,0 +1,25 @@
+<ul class="error">
+	<% @animal.errors.full_messages.each do |error| %>
+	<li><%= error %></li>
+	<% end %>
+</ul> 
+<!-- this will display all the errors messages each in its own li tag -->
+
+<%= form_for @animal do |f| %> <!-- instead of form_tag use this when you have an actual object... -->
+<!-- when its an arbitrary form then use form_tag  -->
+	<div class="field">
+		<%= f.label :name %>
+		<%= f.text_field :name %>
+	</div>
+	<div class="field">
+		<%= f.label :species %>
+		<%= f.text_field :species %>
+	</div>
+	<div class="field">
+		<%= f.label :photo %>
+		<%= f.text_field :photo %>
+	</div>
+		<div class="field">
+	<%= f.submit %>
+	</div>
+<% end %>
