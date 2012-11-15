@@ -1,0 +1,8 @@
+<h1><%= @symbol %></h1>
+<h2><%= number_to_currency @average %></h2>
+<h3><% @stock_quotes.each do |quote| %>
+	<div>
+		<p><%= number_to_currency quote %></p>
+	</div>
+<% end %></h3>
+
