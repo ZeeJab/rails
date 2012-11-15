@@ -1,6 +1,7 @@
 <h1>The List of Your Movies!</h1>
 <% @objects.each do |object| %>
 	<div class="box" style="background: url(<%=	object['Poster'] %>)">
+		<%# binding.pry %>
 		<ul>
 			<li>Title: <%=	 object['Title'] %></li>
 			<li>Actors: <%=	 object['Actors'] %></li>
@@ -12,3 +13,9 @@
 	</div>
 <% end %>
 
+<!-- <h1>
+	Debuggin Info:
+</h1>
+<p>
+	<%#= debug @objects %> you can use any variable you have access to
+</p> -->

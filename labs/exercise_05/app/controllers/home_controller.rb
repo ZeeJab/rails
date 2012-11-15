@@ -11,6 +11,7 @@ class HomeController < ApplicationController
 			results = JSON(HTTParty.get("http://www.omdbapi.com/?t=" + m))
 			@objects << results
 		end
+		# binding.pry
 	end
 end
 
