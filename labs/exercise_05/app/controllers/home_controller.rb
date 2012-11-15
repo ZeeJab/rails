@@ -4,7 +4,7 @@ class HomeController < ApplicationController
 
 	def create
 
-	movies = params[:movie].gsub(' ', '+').split(',+')
+		movies = params[:movie].gsub(' ', '+').split(',+')
 		@objects = []
 
 		movies.each do |m|
@@ -13,6 +13,8 @@ class HomeController < ApplicationController
 		end
 	end
 end
+
+
 
 
 		
