@@ -3,7 +3,9 @@ class HomeController < ApplicationController
 	end
 
 	def create
-		@stocks = params[:stock].split(', ')
+		symbols = params[:stock].upcase.split(', ')
+		@stocks = symbols.map{|symbol| YahooFinance::get_quotes( YahooFinance::StandardQuote, stock )}
+
 	end
 
 end
