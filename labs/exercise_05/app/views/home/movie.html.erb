@@ -1,0 +1,7 @@
+<div class="movie">
+	<%= form_tag '/create' do %> 
+		<h1><%= label_tag 'Enter in your movie names, seperated by commas:' %></h1><br>
+		<%= text_area_tag 'movie' %><br>
+		<%= submit_tag 'Go!' %>
+	<% end %>
+</div>

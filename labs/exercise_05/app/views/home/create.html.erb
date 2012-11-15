@@ -1,0 +1,14 @@
+<h1>The List of Your Movies!</h1>
+<% @objects.each do |object| %>
+	<div class="box" style="background: url(<%=	object['Poster'] %>)">
+		<ul>
+			<li>Title: <%=	 object['Title'] %></li>
+			<li>Actors: <%=	 object['Actors'] %></li>
+			<li>Year: <%=	 object['Year'] %></li>
+			<li>Rated: <%=	 object['Rated'] %></li>
+			<li>Genre: <%=	 object['Genre'] %></li>
+			<li>Runtime: <%=	 object['Runtime'] %></li>
+		</ul>
+	</div>
+<% end %>
+
