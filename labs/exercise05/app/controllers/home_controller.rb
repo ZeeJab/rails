@@ -4,18 +4,15 @@ class HomeController < ApplicationController
 
 	def create
 
-		movies = params[:movie].gsub(' ', '+').split(',+')
+	movies = params[:movie].gsub(' ', '+').split(',+')
 		@objects = []
-		@title = []
-		@actors = []
-		@year = []
-		@rating = []
-		@poster = []
-		@genres = []
-		@runtime = []
+
 		movies.each do |m|
-			@objects << JSON(HTTParty.get("http://www.omdbapi.com/?t=" + m))
-			@title 
+			results = JSON(HTTParty.get("http://www.omdbapi.com/?t=" + m))
+			@objects << results
 		end
 	end
 end
+
+
+		

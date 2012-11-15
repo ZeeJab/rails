@@ -1,1 +1,16 @@
-<%=	 @objects %>
+<% @objects.each do |object| %>
+	<div class="box">
+		
+		<ul>
+			<li><%=	 object['Title'] %></li>
+			<li><%=	 object['Actors'] %></li>
+			<li><%=	 object['Year'] %></li>
+			<li><%=	 object['Rated'] %></li>
+			<li><%=	 object['Poster'] %></li>
+			<li><%=	 object['Genre'] %></li>
+			<li><%=	 object['Runtime'] %></li>
+		</ul>
+		
+	</div>
+<% end %>
+
