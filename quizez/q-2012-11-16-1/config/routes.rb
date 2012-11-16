@@ -1,7 +1,7 @@
 Q201211161::Application.routes.draw do
 
-  match '/start' => 'home#start'
-  match '/post' => 'home#post', :via => :post
+  match '/start' => 'home#start', :via => :get
+  match '/start' => 'home#post', :via => :post
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
