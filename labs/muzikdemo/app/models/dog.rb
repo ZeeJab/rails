@@ -1,3 +1,3 @@
 class Dog < ActiveRecord::Base
-  attr_accessible :name, :youtube
+  mount_uploader :song, MusicUploader
 end
