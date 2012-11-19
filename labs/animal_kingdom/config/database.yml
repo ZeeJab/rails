@@ -1,7 +1,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: animal_kingdom_development
+  database: stox_development
   pool: 5
   host: localhost
   username: postgres
