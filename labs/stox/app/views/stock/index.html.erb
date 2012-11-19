@@ -1,0 +1,15 @@
+Stock Select Page
+
+<%= form_tag '/stocks' do %>
+
+  <%= label_tag 'stock' %>
+  <%= text_field_tag 'stock' %>
+  </br>
+  <%= label_tag 'num quotes' %>
+  <%= number_field_tag 'number' %>
+  </br>
+  <%= submit_tag 'go' %>
+
+
+<% end %>
+<% link_to 'index', '/' %>

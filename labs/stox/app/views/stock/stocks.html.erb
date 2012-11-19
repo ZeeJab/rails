@@ -1,0 +1,18 @@
+<div class = "box" >
+
+<h1> STOCK: <%= @symbol %></h1>
+
+<h2> AVG: <%= @average %></h2>
+<h2> HIGH: <%= @highest %></h2>
+<h2> LOW: <%= @lowest %></h2>
+
+  <ul>
+    <% @quotes.each do |quote| %>
+    <li><%=   quote %></li>
+    <% end %> 
+  </ul>
+
+  <%= link_to "Home", root_path %>
+
+</div>
+
