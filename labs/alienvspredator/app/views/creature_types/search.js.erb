@@ -1,0 +1,5 @@
+$('#creature_types').empty();
+
+<% @creature_types.each do |ct| %>
+	$('#creature_types').prepend('<li><%= link_to ct.name %></li>');
+<% end %>

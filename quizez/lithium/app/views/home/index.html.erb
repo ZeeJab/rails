@@ -1,0 +1,7 @@
+<input type='button' value='name' id='name_button'>
+
+<%= form_tag '/name', :remote => true do %>
+  <%= text_field_tag 'name', '', :class => 'hide' %>
+  <%= submit_tag 'go', :class => 'hide' %>
+<% end %>
+<div id='text'></div>

@@ -12,6 +12,7 @@
 #
 
 class Creature < ActiveRecord::Base
+	has_secure_password #this allows encryption and authentication for password digest to work
 	belongs_to :creature_type 
 	#belogs to is always on the guy with the foreign key
 	has_many :sent_messages, :class_name => 'Message', :foreign_key => 'sender_id'

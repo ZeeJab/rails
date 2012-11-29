@@ -1,0 +1,8 @@
+<%= form_tag '/login' do %>
+	name:
+	<%= text_field_tag 'name' %>
+	pass:
+	<%= password_field_tag 'password' %>
+	<%= submit_tag 'Login!' %>
+<% end %>
+ <!-- #when there's no object you use form tag instad of form for -->

@@ -1,0 +1,7 @@
+<%= form_tag '/twilio' do %>
+	Phone Number:
+	<%= text_field_tag 'phone' %>
+	Text Message:
+	<%= text_area_tag 'textmessage' %>
+	<%= submit_tag 'Send Text Message!' %>
+<% end %>
