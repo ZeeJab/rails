@@ -1,5 +1,5 @@
 1. 
-  values = (250..275).inject(&:+)
+  values = (250..275).to_a.inject(&:+)
   average = values.size.to_f
 
 2. What is a stack frame?
