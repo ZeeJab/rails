@@ -1,0 +1,28 @@
+1. 
+  values = (250..275).inject(&:+)
+  average = values.size.to_f
+
+2. What is a stack frame?
+  A data structure that stores information 
+  about active subroutines of a program
+
+3. Diff between set and list?
+  List is an ordered sequence of elements 
+  Set is a list of elements which is unordered
+
+4. What is big-o notation?
+  characterizes functions based on their growth rates. 
+  Hashes vs. etc.
+
+5. What is Big O of bubble sort?
+  O(n^2)
+
+6. How do you construct a double linked-list?
+  By connecting nodes to a previous and a next node sequentially
+
+7. estimate the bumber of pizzas sold in ny in 1  year?
+  it takes 15 min to take a pie, oven fits 5 pizzas, 20 pies per hour
+  pizza shop is open 10 hours. 200 pizzas per day. 48 holidays per year
+  317 days in a year...63400 pizza's per year for one pizza shop.
+  1000 pizza shops in new york...?! 63400000 pizza's per year in ny?!
+
