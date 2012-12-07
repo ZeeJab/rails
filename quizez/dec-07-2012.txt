@@ -1,0 +1,61 @@
+1. What is HTML?
+  Its a hyper text markup language for the web
+2. Diff between Sass and CSS?
+  Sass is an extension of CSS. It also works with styling the page but by adding nested rules, variables, mixins,  inheritance, etc.
+
+3. What are the types in Javascript?
+  Integer, string, boolean, objects, arrays
+
+4. How do I create an object in Javascript?
+  var message="Hello World!";
+
+5. What is JSON?
+  JavaScript Object Notation. It's a text-based open standard for human-readable data. You request JSON and it brings you back the data.
+
+6. What is DOM ready in Javascript?
+  $(function () {
+    // do stuff after DOM has loaded
+  });
+
+7. How do you create a global variab in JS and a local one?
+  global variables get defiend outside the functoins var hi = "hi" and can be called from anywhere
+  and local varialbles get defied inside a function and cannot be called by any other functions.
+  function hi(){
+    var hi = "hi"
+  }
+
+8. In Ruby what are classes and objects?
+   A class is the blueprint from which individual objects are created.
+
+  class Song
+    def initialize(name, artist, duration)
+      @name     = name
+      @artist   = artist
+      @duration = duration
+    end 
+  end
+
+9. In Ruby what is inheritance?
+  Classes can inherit characteristics from other classes. Smaller classes inherit characteristics from the larger classes to which they belong. If all mammals breathe, then all cats breathe.
+
+10. Diff between hash and array?
+  Arrays are ordered, integer-indexed collections of any object. Ordered
+
+  Hashes are a collection of key-value pairs.  indexing is done via arbitrary keys of any object type, not an integer index. 
+
+11. From above why choose one over the other?
+   I'd choose hashes over arrays because you can map keys to values. And the lookup is independent of the number of elements stored in the table. Where as arrays take longer to look through because it is depended on the number of elements its storing.
+
+12. List some datastructures?
+  arrays, sets, objects, ques, binary trees
+
+13. How many pianos are in Chicago?
+  There are approximately 5,000,000 people living in Chicago.
+  Two people per household
+  1 out 20 households has a piano
+  There are approx 125,000 piano's in Chicago +_ what's in the stores and not in households. !!
+
+
+14. Why are manhole convers round?
+  A round covers cant fall through the circular opening.
+  They don't need to be rotated to fit, etc
