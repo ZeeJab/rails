@@ -1,0 +1,34 @@
+class LinkedList
+	attr_accessor :head
+
+	def initialize
+		@head = nil
+	end
+
+	def dequeue
+    tail = get_last_node(@head)
+    tail.prv.nxt = nil
+    tail.prv = nil
+    tail
+  end
+
+  def get_last_node(node)
+    if node.nxt
+      get_last_node(node.nxt)
+    else
+      node
+    end
+  end
+
+  def enqueue(value)
+		if @head.nil?
+			@head = Node.new(value)
+		else 
+			temp = Node.new(value)
+			temp.nxt = head
+			@head.prv = temp
+			@head = temp #it takes head and attaches it to the 7
+		end
+	end
+
+end
