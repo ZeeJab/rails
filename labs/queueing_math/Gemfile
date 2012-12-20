@@ -5,11 +5,10 @@ gem 'rails', '3.2.9'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'pg' 
-gem 'annotate'
+gem 'pg'
 gem 'pry-rails'
-gem 'yahoofinance'
-gem 'pry-debugger'
+gem 'delayed_job_active_record'
+gem 'daemons'
 
 
 # Gems used only for assets and not required
